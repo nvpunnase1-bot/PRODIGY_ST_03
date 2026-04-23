@@ -35,7 +35,7 @@ public class login_Test
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle,expectedTitle,"Login sucessfully");
     }
-//added priority
+
     //(Invalid Login)
     @Test(priority=2)
     public void invalidLoginTest() 
