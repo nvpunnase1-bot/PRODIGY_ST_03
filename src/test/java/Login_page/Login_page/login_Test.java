@@ -35,7 +35,7 @@ public class login_Test
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle,expectedTitle,"Login sucessfully");
     }
-
+//added priority
     //(Invalid Login)
     @Test(priority=2)
     public void invalidLoginTest() 
@@ -45,7 +45,7 @@ public class login_Test
         driver.findElement(By.id("login-button")).click();
         
         boolean isErrorDisplayed =driver.findElement(By.cssSelector("h3[data-test='error']")).isDisplayed();
-        Assert.assertTrue(isErrorDisplayed," massage not displayed!");
+        Assert.assertTrue(isErrorDisplayed,"massage not displayed!");
     }
 
     //(Empty Fields)
